@@ -1,0 +1,21 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.varma.hemanshu.a_one.home.HomeFragment"
+        android:label="Home">
+
+        <action
+            android:id="@+id/action_profile_to_friendslist"
+            app:destination="@id/details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/details"
+        android:name="com.varma.hemanshu.a_one.details.DetailsFragment"
+        android:label="Details" />
+
+</navigation>
