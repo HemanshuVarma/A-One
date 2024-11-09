@@ -56,4 +56,8 @@ dependencies {
     //navigation graph
     implementation(libs.androidx.navigation.ui)
     implementation(libs.androidx.navigation.fragment)
+
+    //viewmodel and livedata
+    implementation(libs.androidx.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.livedata)
 }
