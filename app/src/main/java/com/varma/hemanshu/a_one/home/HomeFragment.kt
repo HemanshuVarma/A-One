@@ -23,7 +23,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false)
+        binding = FragmentHomeBinding.inflate(inflater)
         binding.viewModel = homeViewModel
         binding.lifecycleOwner = viewLifecycleOwner
         return binding.root
@@ -35,9 +35,9 @@ class HomeFragment : Fragment() {
     }
 
     private fun setClickListeners() {
-        binding.btnDetailScreen.setOnClickListener {
+        /*binding.btnDetailScreen.setOnClickListener {
             Log.d(TAG, "Nav to detail screen")
             findNavController().navigate(R.id.action_home_to_details)
-        }
+        }*/
     }
 }
